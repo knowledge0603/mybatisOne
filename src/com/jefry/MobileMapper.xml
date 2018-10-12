@@ -106,6 +106,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		FROM T_GDXM A,T_HBGY_KZ B 
 		WHERE  A.GD_GUID = B.GD_GUID
  	</select>
+	<!--原生 sql写入 -->
 	<select id="superSelect" parameterType="String" resultType="java.util.LinkedHashMap"> 
 		${sql} 
 	</select>
